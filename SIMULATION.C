@@ -174,7 +174,7 @@ void displaylift(int floor)
 {
 	int gd=DETECT,gm,i;
 	clrscr();
-	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");// change path to your bgi graphics path
 	setfillstyle(XHATCH_FILL,CYAN);
 	floodfill(0,0,BLUE);
 	rectangle(129,29,529,449);
@@ -476,7 +476,7 @@ void welcome()
 {
 	int gd=DETECT,gm;
 	int i=0,x=1;
-	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");// change path to your bgi graphics path
 	while(!kbhit())
 	{
 		cleardevice();
@@ -501,7 +501,7 @@ void welcome()
 void endscreen()
 {
 	int gd=DETECT,gm;
-	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");// change path to your bgi graphics path
 	settextstyle(DEFAULT_FONT,HORIZ_DIR,1);
 	setcolor(CYAN);
 	outtextxy((getmaxx()/2)-100,getmaxy()/2-200,"DATA STRUCTURES MINI PROJECT");
